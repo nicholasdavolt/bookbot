@@ -7,10 +7,12 @@ def main():
    print(f"{num_words} words found in the document\n\n\n\n") 
    character_count = get_character_count(text)
    report_list = generate_char_report(character_count)
+   print((2 ** 10)) 
    for item in report_list:
        key, value = item
        if key.isalpha():
            print(f"The '{key}' character was found {value} times")
+           
 
 def wordcount(text):
     words_count =  len(text.split())
